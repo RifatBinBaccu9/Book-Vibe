@@ -1,0 +1,83 @@
+{
+    "books": [
+      {
+        "bookId": 1,
+        "bookName": "The Silent Patient",
+        "author": "Alex Michaelides",
+        "image": "https://i.ibb.co.com/hZ4K1sL/pngwing-1-1.png",
+        "review": "A thrilling story that keeps you guessing until the end.",
+        "totalPages": 336,
+        "rating": 4.5,
+        "category": "Fiction",
+        "tags": ["Suspense", "Psychological"],
+        "publisher": "Celadon Books",
+        "yearOfPublishing": 2019
+      },
+      {
+        "bookId": 2,
+        "bookName": "Educated",
+        "author": "Tara Westover",
+        "image": "https://i.ibb.co.com/nB3Wwdr/kindpng-7318921.png",
+        "review": "An inspiring memoir about resilience and self-discovery.",
+        "totalPages": 352,
+        "rating": 4.7,
+        "category": "Biography",
+        "tags": ["Memoir", "Inspirational"],
+        "publisher": "Random House",
+        "yearOfPublishing": 2018
+      },
+      {
+        "bookId": 3,
+        "bookName": "Sapiens: A Brief History of Humankind",
+        "author": "Yuval Noah Harari",
+        "image": "https://i.ibb.co.com/N7wYg40/kindpng-1064993.png",
+        "review": "An eye-opening exploration of human history and culture.",
+        "totalPages": 443,
+        "rating": 4.6,
+        "category": "Non-Fiction",
+        "tags": ["History", "Anthropology"],
+        "publisher": "Harper",
+        "yearOfPublishing": 2015
+      },
+      {
+        "bookId": 4,
+        "bookName": "Atomic Habits",
+        "author": "James Clear",
+        "image": "https://i.ibb.co.com/4jd02KF/kindpng-81724-1.png",
+        "review": "A practical guide to building good habits and breaking bad ones.",
+        "totalPages": 320,
+        "rating": 4.8,
+        "category": "Self-Help",
+        "tags": ["Productivity", "Psychology"],
+        "publisher": "Avery",
+        "yearOfPublishing": 2018
+      },
+      {
+        "bookId": 5,
+        "bookName": "The Midnight Library",
+        "author": "Matt Haig",
+        "image": "https://i.ibb.co.com/bP28ZM4/kindpng-5624060-1.png",
+        "review": "A heartfelt story about second chances and infinite possibilities.",
+        "totalPages": 304,
+        "rating": 4.3,
+        "category": "Fiction",
+        "tags": ["Fantasy", "Philosophy"],
+        "publisher": "Viking",
+        "yearOfPublishing": 2020
+      },
+      {
+        "bookId": 6,
+        "bookName": "Becoming",
+        "author": "Michelle Obama",
+        "image": "https://i.ibb.co.com/cTVVtHg/kindpng-2592315-1.png",
+        "review": "An intimate and inspiring memoir by the former First Lady.",
+        "totalPages": 448,
+        "rating": 4.9,
+        "category": "Biography",
+        "tags": ["Memoir", "Inspirational"],
+        "publisher": "Crown Publishing Group",
+        "yearOfPublishing": 2018
+      }
+    ]
+  }
+  
