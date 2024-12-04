@@ -5,7 +5,7 @@ import Books from '../../Component/Books/Books';
 
 const Home = () => {
     const [book, setBook]=useState([]);
- 
+    const [showBook, setShowBook]=useState(3);
     useEffect(()=>{
         fetch('../../../public/Book.json')
         .then(res => res.json())
@@ -28,9 +28,16 @@ const Home = () => {
 
        {/* card section */}
         <div>
+        <div className=' grid grid-cols-3 gap-3 w-[85%] mx-auto my-10'>
          {
-        book.map((books, idx)=><Books key={idx} books={books}></Books>)
+        book.slice(0, showBook).map((books, idx)=><Books key={idx} books={books}></Books>)
          }
+        </div>
+        <div className=' text-center mb-5'>
+        <div className={showBook == book.length && 'hidden'}>
+            <button onClick={()=>setShowBook(book.length)} className="btn">All Show</button>
+        </div>
+        </div>
         </div>
         </section>
     );
