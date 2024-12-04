@@ -4,7 +4,7 @@ import Tags from './Tags';
 import { NavLink } from 'react-router-dom';
 
 const Books = ({books}) => {
-    const {bookId,bookName,image,author,category,tags}=books;
+    const {bookId,bookName,image,author,category,tags,rating}=books;
 
     return (
         <div>
@@ -26,7 +26,7 @@ const Books = ({books}) => {
 
           <div className=' flex justify-between'>
             <p>{category}</p>
-           <div className=' flex gap-2'> <span>5.00</span> <FaRegStar className=' mt-1'/></div>
+           <div className=' flex gap-2'> <span>{rating}</span> <FaRegStar className=' mt-1'/></div>
           </div>
          </div>
         </div>
