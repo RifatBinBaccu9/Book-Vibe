@@ -1,5 +1,7 @@
-
 import { useLoaderData, useParams } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { addBookLT, getStorBook } from '../../Utilites/LocalStor';
 
 const BookDetailsPage = () => {
     const BookDetailData=useLoaderData();
@@ -10,6 +12,20 @@ const BookDetailsPage = () => {
 
     const {image,bookName,author,category,review,totalPages,yearOfPublishing,publisher,tags,rating}=BookDetails;
     
+    const toasts= () =>{
+       addBookLT(id)
+
+           const LocalStorId = getStorBook()
+           console.log(LocalStorId);
+       
+           const localStorFind = LocalStorId.find(storId => storId == id);
+           
+           if (localStorFind) {
+               toast.success('ok');
+           }else{
+               toast.success('Not');
+           }
+    }
     return (
     <div className=" w-[85%] mx-auto flex md:flex-row gap-8 p-6 rounded-lg">
       {/* Image Section */}
@@ -75,12 +91,13 @@ const BookDetailsPage = () => {
 
         {/* Buttons */}
         <div className="flex gap-4 mt-4">
-          <button className="bg-blue-500 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-600">
+          <button onClick={toasts} className="bg-blue-500 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-600">
             Read
           </button>
           <button className="bg-gray-300 text-gray-800 px-4 py-2 rounded-lg shadow hover:bg-gray-400">
             Wishlist
           </button>
+          <ToastContainer />
         </div>
       </div>
     </div>
